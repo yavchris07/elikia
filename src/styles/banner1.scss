@@ -5,10 +5,12 @@ $blac-color:#212121;
 $back-opacity: rgb(0, 0, 0,.8);
 $white-kolor: #fff;
 $white-opacity:#f9f9f9;
+$blue-grey : rgb(239 242 250/1);
+$blue:#003464;
 
 .banner1{
-    background: url('../assets/bang1.jpg') no-repeat;
-    background-size: cover;
+    background: $blue-grey;
+    // background-size: cover;
     height: 350px;
     width: 100%;
     // padding: 10px;
@@ -17,7 +19,7 @@ $white-opacity:#f9f9f9;
     .cover-short{
         width: 100%;
         height: 100%;
-        background: $back-opacity;
+        // background: $back-opacity;
         // padding: 2px 1px;
         color: $white-kolor;
         text-align: center;
@@ -26,9 +28,11 @@ $white-opacity:#f9f9f9;
             font-size: 40px;
             // font-weight: 400;
             margin: 0;
+            color: $blue;
         }
         p{
-            font-size: 22px;
+            font-size: 17px;
+            color: #212121;
         }
     }
 }
@@ -40,8 +44,8 @@ $white-opacity:#f9f9f9;
 
 @media screen and (max-width:600px) {
     .banner1{
-        background: url('../assets/bang1.jpg') no-repeat;
-        background-size: cover;
+        // background: url('../assets/bang1.jpg') no-repeat;
+        // background-size: cover;
         height: 470px;
     
         .cover-short{

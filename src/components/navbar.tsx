@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/nav.scss';
+import {IoLanguage} from 'react-icons/io5';
+import log from '../assets/logo ELIKIA  bleu ciel.png'
 
 export default function Navbar() {
   return (
     <nav>
     <div className='icon'>
-       <h4>Elikia</h4>
+      <img src={log} alt="" />
     </div>
     <div className='items'>
       <ul>
@@ -19,7 +21,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink 
-            to={'/apropos'} 
+            to={'/about'} 
             className='link'
           >
            About
@@ -27,7 +29,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink 
-            to={'/contact'} 
+            to={'/our-programs'} 
             className='link'
           >
             Our Programs 
@@ -35,7 +37,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink 
-            to={'/contact'} 
+            to={'/get-involved'} 
             className='link'
           >
             Get Involved 
@@ -43,7 +45,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink 
-            to={'/contact'} 
+            to={'/way-to-give'} 
             className='link'
           >
            Ways to Give
@@ -51,13 +53,27 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink 
-            to={'/contact'} 
+            to={'/donate'} 
             className='link'
           >
            Donate
           </NavLink>
         </li>
       </ul>
+    </div>
+    <div className='lang'>
+      <span>
+        <IoLanguage />
+        <select name="" id="">
+          <option value="">
+            FR
+          </option>
+          <option value="">
+            EN
+          </option>
+        </select>
+      </span>
+    
     </div>
   </nav>
   )

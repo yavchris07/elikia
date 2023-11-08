@@ -1,33 +1,40 @@
 //SASS PAGE
 // $base-color: #c6538c;
-$blac-color:#212121;
+$blac-color:#221e1e;
 // $red: #ff0006;
 // $blue:#003464;
 $blue:#006cd1;
 $yellow:#ff9922;
 $back-opacity: rgb(0, 0, 0,.9);
-$white-kolor: #fff;
+$white: #fff;
 $white-opacity:#f9f9f9;
 $white-black:#f7f7f7;
 
 nav{
-    background: rgb(0, 108, 209,.6);
+    background: $white;
     // background: $blac-color;
-    height: 40px;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
     align-items: center;
     .icon{
-       font-size: 18px; 
+       
+        img{
+            width: 180px;
+            height: 80px;
+            object-fit: cover;
+        }
+       
+        // border: 1px solid red;
     }
 
     .items{
         align-items: center;
         // background: blue;
         ul{
-            color: $white-kolor;
+            color: $white;
             // background: red;
             display: flex;
             gap: 10px;
@@ -37,17 +44,26 @@ nav{
             li{
                 text-decoration: none;
                 list-style: none;
-                color: $white-kolor;
-                font-size: 12px;
-                font-weight: 400;
+                // color: #212121;
+                font-size: 16px;
+                font-weight: 700;
                 .link{
                     text-decoration: none;
-                    color: $white-kolor;
+                    color: rgb(35, 31, 31,.8)
                 }
+                :hover{
+                    color: $blue;
+                } 
             }
             
         }
     }
+
+    .lang{
+        background-color: #efefef;
+        padding: 6px 10px; 
+    }
+   
 }
 
 @media screen and (max-width:1024px) {
@@ -61,6 +77,7 @@ nav{
         justify-content: space-around;
         position: absolute;
         .icon{
+            background: $white-black;
             img{
                 height: 120px;
                 width: 150px;
@@ -71,7 +88,7 @@ nav{
             align-items: center;
             // background: blue;
             ul{
-                color: $white-kolor;
+                color: $white;
                 // background: red;
                 // display: flex;
                 // gap: 10px;
@@ -81,7 +98,7 @@ nav{
                 li{
                     text-decoration: none;
                     list-style: none;
-                    color: $white-kolor;
+                    color: $white;
                     font-size: 25px;
                     // font-weight: 600;
                     // .link{
@@ -111,7 +128,7 @@ nav{
             align-items: center;
             // background: blue;
             ul{
-                color: $white-kolor;
+                color: $white;
                 // background: red;
                 // display: flex;
                 // gap: 10px;
@@ -121,7 +138,7 @@ nav{
                 li{
                     text-decoration: none;
                     list-style: none;
-                    color: $white-kolor;
+                    color: $white;
                     font-size: 15px;
                     // font-weight: 600;
                     // .link{

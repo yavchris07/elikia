@@ -1,7 +1,13 @@
 import React from 'react'
+import BannerShort from '../components/banner-short'
 
 export default function GetInvolved() {
   return (
-    <div>G</div>
+    <>
+      <BannerShort 
+        title='Donate'
+        summary='ok'
+      />
+    </>
   )
 }

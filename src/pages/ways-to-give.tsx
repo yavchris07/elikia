@@ -1,7 +1,10 @@
 import React from 'react'
+import BannerShort from '../components/banner-short'
 
 export default function WaysToGive() {
   return (
-    <div>ways-to-give</div>
+    <>
+      <BannerShort title='Way to give' summary='ok'/>
+    </>
   )
 }
