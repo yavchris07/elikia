@@ -13,7 +13,7 @@ function Banner() {
         </p>
       
           <NavLink 
-            to={'/apropos'} 
+            to={'/about'} 
             className='link'
           >
             More about us

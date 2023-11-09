@@ -33,5 +33,32 @@ $blue:#003464;
         width: 60%;
         text-align: start;
         margin-left: 5px;
+        p{color: grey;}
+    }
+}
+
+@media screen and (max-width:600px) {
+    .our{
+        h1{}
+        div{
+            width: 95%;
+            margin: auto;
+            height: 350px;
+            background: rgba(11, 24, 11, 0.8);
+        }
+    }
+    .about-card{
+        width: 95%;
+        margin: 10px auto;
+        // background-color: red;
+        height: auto;
+        display: flex;
+
+        .note{
+            width: 60%;
+            text-align: start;
+            margin-left: 5px;
+            p{color: grey;}
+        }
     }
 }

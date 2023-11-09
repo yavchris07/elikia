@@ -1,5 +1,7 @@
 import React from 'react';
 import BannerShort from '../components/banner-short';
+import { MdOutlineDownloading } from 'react-icons/md';
+import Card from '../components/card';
 
 
 export default function Donate() {
@@ -7,8 +9,13 @@ export default function Donate() {
     <>
     <BannerShort 
       title='Donate'
-      summary='ok'
+      summary=''
+    />
+    <Card 
+        title='' 
+        resume='Web site under construction :( ' 
       />
+      <MdOutlineDownloading />
     </>
   )
 }

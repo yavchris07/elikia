@@ -44,8 +44,6 @@ $blue:#003464;
 
 @media screen and (max-width:600px) {
     .banner1{
-        // background: url('../assets/bang1.jpg') no-repeat;
-        // background-size: cover;
         height: 470px;
     
         .cover-short{
@@ -56,7 +54,7 @@ $blue:#003464;
             }
             p{
                 font-size: 15px;
-                color: $base-color;
+                color: grey;
                 font-weight: 500;
             }
         }

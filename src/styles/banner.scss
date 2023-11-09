@@ -1,7 +1,7 @@
 //SASS PAGE
 // $base-color: #c6538c;
 $blac-color:#212121;
-// $blue:#003464;
+$blue1:#003464;
 $blue:#006cd1;
 $yellow:#ff9922;
 $back-opacity: rgb(0, 0, 0,.5);
@@ -12,24 +12,16 @@ $blue-grey : rgb(239 242 250/1);
 
 
 .banner{
-    // background: rgb(255, 255, 255,.5);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background: red;
     background-color: $blue-grey;
-
     height: 600px;
     width: 100%;
-    // color: $white-kolor;
     text-align: center;
-    // padding: 10px;
 
     .cover{
         width: 100%;
         height: 100%;
         text-align: center;
-        // background: $back-opacity;
-        // background: red;
+
         h1{
             padding-top: 220px;
             margin: 0;
@@ -38,7 +30,7 @@ $blue-grey : rgb(239 242 250/1);
             color:$blue;
         }
         p{
-            font-size: 25px;
+            font-size: 20px;
             color: grey;
             font-weight: 500;
             margin-bottom: 120px;
@@ -58,8 +50,9 @@ $blue-grey : rgb(239 242 250/1);
             color: black;
             font-size: 18px;
             padding: 10px 40px;
-            position: relative;
+             
             font-weight: 600;
+            z-index: 1;
             .op{
                 padding-left: 6px;
                 margin-top: 1px;
@@ -108,23 +101,45 @@ $blue-grey : rgb(239 242 250/1);
     .cover{
         width: 100%;
         height: 100%;
-        background: $back-opacity;
+        background: $blue-grey;
         // background: red;
         h1{
-            padding-top: 220px;
+            padding-top: 200px;
             margin: 0;
             font-size: 30px;
-            color: #f9f9f9;
+            color: $blue;
         }
         p{
             font-size: 18px;
-            color: $white-opacity;
+            color: $blue1;
             font-weight: 400;
-            // background: red;
-            // width: 98%;
-            // margin: auto;
-            // text-align:justify;
-            padding: 1px;
+            padding: 1px;margin-bottom: 60px;
+        }
+
+        .link{
+            text-decoration: none;
+            border: none;
+            background-color: #003464;
+            color: aliceblue;
+            font-size: 15px;
+            padding: 10px 40px;
+            font-weight: 600;
+            z-index: 1;
+
+            .op{
+                padding-left: 6px;
+                margin-top: 1px;
+                text-align: center;
+                // background: red;
+                position: relative;
+
+            }
+            &:hover{
+                background: $blue1;
+                color: white;
+            }
+
+            // background: #fff;
         }
     }
 }

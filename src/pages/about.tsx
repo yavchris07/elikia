@@ -8,6 +8,7 @@ export default function About() {
   return (
     <> 
       <BannerShort 
+        // path='• Home • about'
         title='About us' 
         summary='a social impact organization focused on helping build thriving and resilient communities in Africa' 
       />
@@ -15,21 +16,20 @@ export default function About() {
       <Card 
         title='Who we are !' 
         resume='Elikiya Foundation is a social impact organization focused on helping build thriving and resilient communities in Africa. We believe that investing in Human Capital can help build thriving individuals, communities, and sustainable Livelihoods.' 
-        />
-        <Card 
+      />
+      <Card 
         title='Our mission and Values ' 
         resume='Elikiya Foundation’s mission is to support underprivileged communities across Africa build brighter futures. ' 
-        />
+      />
 
-<div className='our'>
-         
+      <div className='our'>
         <div></div>
       </div>
 
-        <Card 
+      <Card 
         title='Our vision' 
         resume='We envision prosperous and thriving communities, where clouds of desperation give way to new lights of hope.' 
-        />
+      />
     </>
   )
 }
