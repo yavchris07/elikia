@@ -1,0 +1,37 @@
+//SASS PAGE
+$base-color: #ff0006;
+$blac-color:#212121;
+// $back-opacity: rgb(33, 33, 33,.9);
+$back-opacity: rgb(0, 0, 0,.8);
+$white-kolor: #fff;
+$white-opacity:#f9f9f9;
+$blue-grey : rgb(239 242 250/1);
+$blue:#003464;
+
+
+.our{
+    h1{}
+    div{
+        width: 80%;
+        margin: auto;
+        height: 350px;
+        background: rgba(2, 48, 2, 0.9);
+    }
+}
+.about-card{
+    width: 80%;
+    margin: 10px auto;
+    // background-color: red;
+    height: auto;
+    display: flex;
+    .pic{
+        width: 30%;
+        height: 190px;
+        background-color: $blue-grey;
+    }
+    .note{
+        width: 60%;
+        text-align: start;
+        margin-left: 5px;
+    }
+}

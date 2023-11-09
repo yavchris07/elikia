@@ -11,7 +11,7 @@ export default function Letter() {
         <div className='input'>
             <div>
                 <h3>Information letter :</h3>
-                <span>Nous nous engageons à pas spammer !</span>
+                <span>We promise not to spam !</span>
             </div>
             <button type="button">I want to get involved</button>
         </div>
