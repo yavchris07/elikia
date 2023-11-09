@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/nav.scss';
 import {IoLanguage} from 'react-icons/io5';
-import log from '../assets/logo ELIKIA  bleu ciel.png'
+import log from '../assets/logo ELIKIA  bleu ciel.png';
+import {CgMenuRightAlt} from 'react-icons/cg'
 
 export default function Navbar() {
   return (
@@ -74,6 +75,11 @@ export default function Navbar() {
         </select>
       </span>
     
+    </div>
+    <div className='option'>
+      <button>
+        <CgMenuRightAlt />
+      </button>
     </div>
   </nav>
   )
