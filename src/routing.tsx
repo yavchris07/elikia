@@ -13,16 +13,16 @@ function Routing() {
   return (
     <>
       <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' Component={Home} />
-        <Route path='/about' Component={About} />
-        <Route path='/our-programs' Component={Program} />
-        <Route path='/get-involved' Component={GetInvolved} />
-        <Route path='/way-to-give' Component={WaysToGive} />
-        <Route path='/donate' Component={Donate} />
-      </Routes>
-      <Footer />
+        <Navbar />
+        <Routes>
+          <Route path='/' Component={Home} />
+          <Route path='/about' Component={About} />
+          <Route path='/our-programs' Component={Program} />
+          <Route path='/get-involved' Component={GetInvolved} />
+          <Route path='/way-to-give' Component={WaysToGive} />
+          <Route path='/donate' Component={Donate} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

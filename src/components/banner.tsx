@@ -1,22 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../styles/banner.scss'
 import { NavLink } from 'react-router-dom';
-import {AiOutlineArrowRight} from 'react-icons/ai'
+import {AiOutlineArrowRight} from 'react-icons/ai';
+import { LangContext } from '../context/lang';
+
+
 
 function Banner() {
+  
+  const { dispatch: { translate }} = useContext(LangContext);
   return (
     <section className='banner'>
       <div className='cover'>
-        <h1>Rekindling for brighter futures</h1>
-        <p>
-          Building Communities by empowering one individuals at a time; Igniting dreams; Helping write new stories of hope  
-        </p>
+        <h1>{translate('text')}</h1>
+        <p>{translate('slogan')}</p>
       
           <NavLink 
             to={'/about'} 
             className='link'
           >
-            More about us
+            {translate('btn')}
             <AiOutlineArrowRight className='op'/>
           </NavLink>
          

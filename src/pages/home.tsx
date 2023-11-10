@@ -62,15 +62,15 @@ export default function Home() {
 
     <div className='cont'>
         <div>
-          <h1>Science helping</h1>
+          <h1>Eduction helping</h1>
           <span>Helping write new stories of hope</span>
         </div>
 
         <div className='list'>
-          <Hcard title='Quatumn physics' type='Elikia book helping'/>
-          <Hcard title='Mathmatics' type='Elikia book helping'/>
+          <Hcard title='Geology' type='Elikia book helping'/>
+          <Hcard title='History' type='Elikia book helping'/>
           <Hcard 
-            title='Chimistry' 
+            title='French' 
             type='Elikia book helping'
           />
         </div>

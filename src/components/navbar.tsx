@@ -3,8 +3,19 @@ import '../styles/nav.scss';
 import {IoLanguage} from 'react-icons/io5';
 import log from '../assets/logo ELIKIA  bleu ciel.png';
 import {CgMenuRightAlt} from 'react-icons/cg'
+import Header from './header';
+import { useContext } from 'react';
+import { LangContext } from '../context/lang';
+
+
+interface NavbarProps {
+  translate: (key: string) => string;
+}
 
 export default function Navbar() {
+
+  const { dispatch: { translate }} = useContext(LangContext);
+
   return (
     <nav>
     <div className='icon'>
@@ -17,7 +28,7 @@ export default function Navbar() {
             to={'/'} 
             className='link'
           >
-            Home
+            {translate('home')}
           </NavLink>
         </li>
         <li>
@@ -25,7 +36,7 @@ export default function Navbar() {
             to={'/about'} 
             className='link'
           >
-           About
+            {translate('about')}
           </NavLink>
         </li>
         <li>
@@ -33,7 +44,7 @@ export default function Navbar() {
             to={'/our-programs'} 
             className='link'
           >
-            Our Programs 
+            {translate('programs')}
           </NavLink>
         </li>
         <li>
@@ -41,7 +52,7 @@ export default function Navbar() {
             to={'/get-involved'} 
             className='link'
           >
-            Get Involved 
+            {translate('get-involved')}
           </NavLink>
         </li>
         <li>
@@ -49,7 +60,7 @@ export default function Navbar() {
             to={'/way-to-give'} 
             className='link'
           >
-           Ways to Give
+            {translate('way-to-give')}
           </NavLink>
         </li>
         <li>
@@ -57,27 +68,23 @@ export default function Navbar() {
             to={'/donate'} 
             className='link'
           >
-           Donate
+            {translate('donate')}
           </NavLink>
         </li>
       </ul>
     </div>
-    <div className='lang'>
-      <span>
+    <div className='langs'>
+      {/* <span>
         <IoLanguage />
-        <select name="" id="">
-          <option value="">
-            FR
-          </option>
-          <option value="">
-            EN
-          </option>
-        </select>
-      </span>
-    
+      </span> */}
+      
     </div>
+    <Header />
+
     <div className='option'>
-      <button>
+      <button 
+        
+      >
         <CgMenuRightAlt />
       </button>
     </div>
