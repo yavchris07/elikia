@@ -7,6 +7,7 @@ import { LangContext } from '../context/lang';
 
 export default function About() {
   const { dispatch: { translate }} = useContext(LangContext);
+  
   return (
     <> 
       <BannerShort 
