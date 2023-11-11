@@ -23,7 +23,7 @@ const Header: FC<HeaderProps> = ({ fixed, transparent }:HeaderProps) => {
 
   const handleClickOutside = useCallback((e:any) => {
     if(showDropdown && e.target.closest('.dropdown') !== dropdownEl.current) {
-      setShowDropdown(false);
+      setShowDropdown(true);
     }
   }, [showDropdown, setShowDropdown, dropdownEl]);
 
@@ -46,7 +46,7 @@ const Header: FC<HeaderProps> = ({ fixed, transparent }:HeaderProps) => {
             <p className="selected" onClick={() => setShowDropdown(!showDropdown)}>{language}</p>
             {showDropdown && <ul className="dropdown" ref={dropdownEl}>
                 <li onClick={() => chooseLanguageHandler('FR')}>FR</li>
-                <li onClick={() => chooseLanguageHandler('EN')}>EN</li>  
+                <li onClick={() => chooseLanguageHandler('EN')}>EN</li> 
               </ul>
             }
         </div>

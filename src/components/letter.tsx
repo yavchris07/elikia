@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { LangContext } from '../context/lang';
 
 export default function Letter() {
+  const { dispatch: { translate }} = useContext(LangContext);
+  
   return (
     <div className='letter'> 
         <div className='dot'>
@@ -10,10 +13,10 @@ export default function Letter() {
         </div>
         <div className='input'>
             <div>
-                <h3>Information letter :</h3>
-                <span>We promise not to spam !</span>
+                <h3>{translate('letter-text')}</h3>
+                <span>{translate('spam')}</span>
             </div>
-            <button type="button">I want to get involved</button>
+            <button type="button">{translate('btn-letter')}</button>
         </div>
     </div>
   )

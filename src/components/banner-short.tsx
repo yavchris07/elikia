@@ -7,7 +7,7 @@ interface titleProps{
   path?:string
 }
 
-function BannerShort({title,summary,path}:titleProps) {
+function BannerShort({title,summary}:titleProps) {
   return (
     <section className='banner1'>
        <div className='cover-short'>

@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Letter from './letter';
 import '../styles/footer.scss';
 import SUM from '../models/goal-data';
 import Summary from '../models/goal';
+import { LangContext } from '../context/lang';
 
 export default function Footer() {
 
   const [sum] = useState<Summary[]>(SUM);
+  const { dispatch: { translate }} = useContext(LangContext);
   return (
     <> 
       <Letter />
@@ -23,7 +25,7 @@ export default function Footer() {
       </div>
 
       <div className='foot'>
-        <span>© 2023 | Elikia foundation | Goma - NK</span>
+        <span>{translate('copyright')}</span>
       </div>
     </>
   )

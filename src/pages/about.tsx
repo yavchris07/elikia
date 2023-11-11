@@ -1,25 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import BannerShort from '../components/banner-short';
 import Card from '../components/card';
 import '../styles/about.scss'
+import { LangContext } from '../context/lang';
  
 
 export default function About() {
+  const { dispatch: { translate }} = useContext(LangContext);
   return (
     <> 
       <BannerShort 
         // path='• Home • about'
-        title='About us' 
-        summary='a social impact organization focused on helping build thriving and resilient communities in Africa' 
+        title={translate('who')} 
+        summary= {translate('about-summary')}
       />
       
       <Card 
-        title='Who we are !' 
-        resume='Elikiya Foundation is a social impact organization focused on helping build thriving and resilient communities in Africa. We believe that investing in Human Capital can help build thriving individuals, communities, and sustainable Livelihoods.' 
+        title={translate('who')} 
+        resume={translate('who-text')} 
       />
       <Card 
-        title='Our mission and Values ' 
-        resume='Elikiya Foundation’s mission is to support underprivileged communities across Africa build brighter futures. ' 
+        title={translate('mission')}
+        resume={translate('mission-text')} 
       />
 
       <div className='our'>
@@ -27,8 +29,8 @@ export default function About() {
       </div>
 
       <Card 
-        title='Our vision' 
-        resume='We envision prosperous and thriving communities, where clouds of desperation give way to new lights of hope.' 
+        title={translate('vision')}
+        resume= {translate('vision-text')} 
       />
     </>
   )
