@@ -1,26 +1,29 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Card from '../components/card'
 import BannerShort from '../components/banner-short'
+import { LangContext } from '../context/lang';
 
 export default function Program() {
+  const { dispatch: { translate }} = useContext(LangContext);
+  
   return (
     <> 
       <BannerShort 
-        title='Our program •' 
+        title={translate('prog')} 
         summary='' 
       />
       <Card 
-        title='One ' 
-        resume='•	Back to school Campaign ' 
+        title={translate('one')}
+        resume={translate('one-txt')} 
       />
       <Card 
-        title='Two ' 
-        resume='•	Elikiya Education Trust  ' 
+        title={translate('two')}
+        resume={translate('two-txt')}
       />
 
       <Card 
-        title='Three ' 
-        resume='•	Brighter Future Initiative ' 
+        title={translate('three')}
+        resume={translate('three-txt')} 
       />
 
       <div className='our'>
@@ -28,8 +31,8 @@ export default function Program() {
       </div>
 
       <Card 
-        title='Four' 
-        resume='• Anaweza (She can)' 
+       title={translate('four')}
+       resume={translate('four-txt')} 
       />
     </>
   )
