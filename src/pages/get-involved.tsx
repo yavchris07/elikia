@@ -13,7 +13,7 @@ export default function GetInvolved() {
         summary='' 
       />
       <Card 
-        title='' 
+        title={''} 
         resume={translate('volunteer')} 
       />
 
