@@ -13,6 +13,9 @@ $blue-grey : rgb(239 242 250/1);
 
 .banner{
     background-color: $blue-grey;
+    // background: url('../assets/art\ 3.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
     height: 600px;
     width: 100%;
     text-align: center;
@@ -92,6 +95,7 @@ $blue-grey : rgb(239 242 250/1);
     
 .banner{
     background: #fff;
+
     height: 500px;
     width: 100%;
     color: $white-kolor;

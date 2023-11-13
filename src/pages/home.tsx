@@ -6,6 +6,16 @@ import '../styles/home.scss';
 import { LangContext } from '../context/lang';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import v from '../assets/vik 1.jpg';
+import v1 from '../assets/vik 2.jpg';
+import bk2 from '../assets/bk 2.jpg';
+import carabean from '../assets/carabean.jpg'
+import is from '../assets/island.jpg'
+import hugo from '../assets/bk 1.jpg';
+import geo from '../assets/geo.jpg';
+import mat from '../assets/math.jpg';
+import ph from '../assets/phyz.jpg';
+import ch from '../assets/chimie.jpg'
 
 export default function Home() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -22,11 +32,20 @@ export default function Home() {
         </div>
 
         <div className='list'>
-          <Hcard title='Book of xxxxxxxxxx' type='Elikia book helping'/>
-          <Hcard title='The Vikings' type='Elikia book helping'/>
+          <Hcard 
+            title='Book of xxxxxxxxxx' 
+            type='Elikia book helping'
+            photo={bk2}
+            />
+          <Hcard 
+            title='The Vikings' 
+            type='Elikia book helping'
+            photo={v}
+            />
           <Hcard 
             title='New Carabei' 
             type='Elikia book helping'
+            photo={is}
           />
         </div>
        
@@ -41,11 +60,21 @@ export default function Home() {
         </div>
 
         <div className='list'>
-          <Hcard title='Quatumn physics' type='Elikia book helping'/>
-          <Hcard title='Mathmatics' type='Elikia book helping'/>
+          
+          <Hcard 
+            title='Mathmatics' 
+            type='Elikia book helping'
+            photo={mat}
+          />
+          <Hcard 
+            title='Quatumn physics' 
+            type='Elikia book helping'
+            photo={ph}
+          />
           <Hcard 
             title='Chimistry' 
             type='Elikia book helping'
+            photo={ch}
           />
         </div>
        
@@ -69,11 +98,20 @@ export default function Home() {
         </div>
 
         <div className='list'>
-          <Hcard title='Geology' type='Elikia book helping'/>
-          <Hcard title='History' type='Elikia book helping'/>
+          <Hcard 
+            title='Geology' 
+            type='Elikia book helping'
+            photo={geo}
+            />
+          <Hcard 
+            title='History' 
+            type='Elikia book helping'
+            photo={v1}
+            />
           <Hcard 
             title='French' 
             type='Elikia book helping'
+            photo={hugo}
           />
         </div>
        

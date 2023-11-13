@@ -62,14 +62,14 @@ export default function Navbar() {
             {translate('way-to-give')}
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink 
             to={'/donate'} 
             className='link'
           >
             {translate('donate')}
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
     <div className='langs'>

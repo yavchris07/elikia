@@ -29,9 +29,9 @@ export default function Program() {
         resume={translate('three-txt')} 
       />
 
-      <div className='our'>
+      {/* <div className='our'>
         <div></div>
-      </div>
+      </div> */}
 
       <Card 
        title={translate('four')}
