@@ -2,12 +2,15 @@ import React, { useContext } from 'react'
 import Card from '../components/card'
 import BannerShort from '../components/banner-short'
 import { LangContext } from '../context/lang';
+import Footer from '../components/footer';
+import Navbar from '../components/navbar';
 
 export default function Program() {
   const { dispatch: { translate }} = useContext(LangContext);
   
   return (
-    <> 
+    <>
+      <Navbar /> 
       <BannerShort 
         title={translate('prog')} 
         summary='' 
@@ -34,6 +37,7 @@ export default function Program() {
        title={translate('four')}
        resume={translate('four-txt')} 
       />
+      <Footer />
     </>
   )
 }

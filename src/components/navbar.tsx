@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/nav.scss';
-import {IoLanguage} from 'react-icons/io5';
 import log from '../assets/logo ELIKIA  bleu ciel.png';
 import {CgMenuRightAlt} from 'react-icons/cg'
 import Header from './header';
@@ -8,9 +7,9 @@ import { useContext } from 'react';
 import { LangContext } from '../context/lang';
 
 
-interface NavbarProps {
-  translate: (key: string) => string;
-}
+// interface NavbarProps {
+//   translate: (key: string) => string;
+// }
 
 export default function Navbar() {
 
@@ -82,11 +81,11 @@ export default function Navbar() {
     <Header />
 
     <div className='option'>
-      <button 
-        
+      <NavLink 
+        to={'/app-bar'}
       >
         <CgMenuRightAlt />
-      </button>
+      </NavLink>
     </div>
   </nav>
   )

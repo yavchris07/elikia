@@ -234,7 +234,7 @@ nav{
         justify-content: space-between;
         border-bottom: 1px solid #efefef;
         .icon{
-            display: none;
+            display: block;
             img{
                 height: 80px;
                 width: 70px;
@@ -244,7 +244,7 @@ nav{
         .items{
             align-items: center;
             background: aliceblue;
-            // display: none;
+            display: none;
             position: absolute;
             margin-top: 270px;
             width: 100%;

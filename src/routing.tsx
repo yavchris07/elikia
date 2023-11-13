@@ -8,12 +8,14 @@ import Donate from './pages/donate';
 import Program from './pages/program';
 import WaysToGive from './pages/ways-to-give';
 import GetInvolved from './pages/get-involved';
+import Appbar from './pages/mobile-appbar';
+
 
 function Routing() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path='/' Component={Home} />
           <Route path='/about' Component={About} />
@@ -21,8 +23,9 @@ function Routing() {
           <Route path='/get-involved' Component={GetInvolved} />
           <Route path='/way-to-give' Component={WaysToGive} />
           <Route path='/donate' Component={Donate} />
+          <Route path='/app-bar' Component={Appbar} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

@@ -3,13 +3,16 @@ import BannerShort from '../components/banner-short';
 import Card from '../components/card';
 import '../styles/about.scss'
 import { LangContext } from '../context/lang';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
  
 
 export default function About() {
   const { dispatch: { translate }} = useContext(LangContext);
   
   return (
-    <> 
+    <>
+      <Navbar /> 
       <BannerShort 
         // path='• Home • about'
         title={translate('who')} 
@@ -33,6 +36,7 @@ export default function About() {
         title={translate('vision')}
         resume= {translate('vision-text')} 
       />
+      <Footer />
     </>
   )
 }

@@ -4,12 +4,15 @@ import Banner from '../components/banner';
 import Hcard from '../components/h-card';
 import '../styles/home.scss';
 import { LangContext } from '../context/lang';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 export default function Home() {
   const { dispatch: { translate }} = useContext(LangContext);
   
   return (
     <>
+    <Navbar />
       <Banner /> 
       {/* <CardList /> */}
       <div className='cont'>
@@ -77,7 +80,7 @@ export default function Home() {
         {/* <Hcard />
         <Hcard /> */}
       </div>
-
+    <Footer />
     </>
   )
 }
