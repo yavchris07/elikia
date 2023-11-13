@@ -10,7 +10,7 @@ export default function Appbar(){
     return(
         <>
             <Navbar />
-            <div className='items'>
+            <div className='app-bar'>
                 <ul>
                     <li>
                         <NavLink 
