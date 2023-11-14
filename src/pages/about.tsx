@@ -18,24 +18,27 @@ export default function About() {
         title={translate('who')} 
         summary= {translate('about-summary')}
       />
+      <div className='about'>
+        <Card 
+          title={translate('who')} 
+          resume={translate('who-text')} 
+        />
+        <Card 
+          title={translate('mission')}
+          resume={translate('mission-text')} 
+        />
+        <Card 
+          title={translate('vision')}
+          resume= {translate('vision-text')} 
+        />
+      </div>
       
-      <Card 
-        title={translate('who')} 
-        resume={translate('who-text')} 
-      />
-      <Card 
-        title={translate('mission')}
-        resume={translate('mission-text')} 
-      />
 
       {/* <div className='our'>
         <div></div>
       </div> */}
 
-      <Card 
-        title={translate('vision')}
-        resume= {translate('vision-text')} 
-      />
+      
       <Footer />
     </>
   )

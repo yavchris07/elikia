@@ -71,10 +71,11 @@ $blue1:#003464;
 .container{
     // background: grey;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 10px;
-    margin-top: 50px;
-    padding: 2px 30px;
+    margin: 10px auto 50px;
+    padding: 2px 40px;
+    width: 80%;
 
     .card{
         width: 220px;

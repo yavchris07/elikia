@@ -6,16 +6,20 @@ import '../styles/home.scss';
 import { LangContext } from '../context/lang';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import v from '../assets/vik 1.jpg';
-import v1 from '../assets/vik 2.jpg';
-import bk2 from '../assets/bk 2.jpg';
-import carabean from '../assets/carabean.jpg'
-import is from '../assets/island.jpg'
-import hugo from '../assets/bk 1.jpg';
-import geo from '../assets/geo.jpg';
-import mat from '../assets/math.jpg';
-import ph from '../assets/phyz.jpg';
-import ch from '../assets/chimie.jpg'
+// import v1 from '../assets/vik 2.jpg';
+// import ph from '../assets/phyz.jpg';
+import en from '../assets/en.jpg';
+import sk from '../assets/skol.jpg';
+import st from '../assets/study.jpg';
+
+import mto from '../assets/kwetu.jpg';
+import pt from '../assets/petit.jpg';
+import mama from '../assets/mama.jpg';
+
+import mac from '../assets/mac.jpg';
+import mach from '../assets/mach.jpg';
+import kwetu from '../assets/mto.jpg';
+import bat from '../assets/bat.jpg';
 
 export default function Home() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -33,19 +37,19 @@ export default function Home() {
 
         <div className='list'>
           <Hcard 
-            title='Book of xxxxxxxxxx' 
+            title='Book of leadership' 
             type='Elikia book helping'
-            photo={bk2}
+            photo={sk}
             />
           <Hcard 
-            title='The Vikings' 
+            title='Les réalités de la vie' 
             type='Elikia book helping'
-            photo={v}
+            photo={en}
             />
           <Hcard 
-            title='New Carabei' 
+            title='La clé, Education' 
             type='Elikia book helping'
-            photo={is}
+            photo={st}
           />
         </div>
        
@@ -62,19 +66,19 @@ export default function Home() {
         <div className='list'>
           
           <Hcard 
-            title='Mathmatics' 
+            title='La culture' 
             type='Elikia book helping'
-            photo={mat}
+            photo={mto}
           />
           <Hcard 
-            title='Quatumn physics' 
+            title='Comment entreprendre ?' 
             type='Elikia book helping'
-            photo={ph}
+            photo={mac}
           />
           <Hcard 
-            title='Chimistry' 
+            title='La nutrition' 
             type='Elikia book helping'
-            photo={ch}
+            photo={pt}
           />
         </div>
        
@@ -99,19 +103,19 @@ export default function Home() {
 
         <div className='list'>
           <Hcard 
-            title='Geology' 
+            title='La vie, une mère' 
             type='Elikia book helping'
-            photo={geo}
+            photo={mama}
             />
           <Hcard 
-            title='History' 
+            title='History, la guerre !' 
             type='Elikia book helping'
-            photo={v1}
+            photo={bat}
             />
           <Hcard 
-            title='French' 
+            title=' The entertainment' 
             type='Elikia book helping'
-            photo={hugo}
+            photo={kwetu}
           />
         </div>
        

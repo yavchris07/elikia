@@ -1,12 +1,13 @@
 interface cardProps{
     title : string,
-    resume: string
+    resume: string,
+    clas? : string
 }
 
-export default function Card({title,resume}:cardProps){
+export default function Card({title,resume,clas}:cardProps){
     return(
-        <div className="about-card">
-            {/* <div className="pic"></div> */}
+        <div className={clas}>
+            {/* <div className="pic">about-cards</div> */}
             <div className="note">
                 <h2>{title}</h2>
                 <p>{resume}</p>

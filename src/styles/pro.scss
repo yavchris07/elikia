@@ -1,0 +1,28 @@
+.pro{
+    width: 80%;
+    margin: auto;
+    // background: red;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 6px;
+}
+.cards{
+    width: 80%;
+    margin: 10px auto;
+    // background-color: red;
+    height: auto;
+    display: flex;
+    border: 1px solid grey;
+    // border-radius: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .pro{
+        width: 90%;
+        margin: auto;
+        // background: red;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    } 
+}

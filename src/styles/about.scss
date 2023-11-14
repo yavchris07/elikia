@@ -18,24 +18,33 @@ $blue:#003464;
         background: rgba(2, 48, 2, 0.9);
     }
 }
-.about-card{
+
+.about{
     width: 80%;
-    margin: 10px auto;
-    // background-color: red;
-    height: auto;
-    display: flex;
-    .pic{
-        width: 30%;
-        height: 190px;
-        background-color: $blue-grey;
-    }
-    .note{
-        width: 60%;
-        text-align: start;
-        margin-left: 5px;
-        p{color: grey;}
+    margin: auto;
+    text-align: start;
+    .about-card{
+        width: 80%;
+        margin: 10px auto;
+        // background-color: red;
+        height: auto;
+        display: flex;
+        border: 1px solid grey;
+        // border-radius: 2px;
+        .pic{
+            width: 30%;
+            height: 190px;
+            background-color: $blue-grey;
+        }
+        .note{
+            width: 60%;
+            text-align: start;
+            margin-left: 5px;
+            p{color: grey;}
+        }
     }
 }
+
 
 @media screen and (max-width:600px) {
     .our{

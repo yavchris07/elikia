@@ -27,10 +27,10 @@ export default function Footer() {
           title={translate('vision')}
           summary={translate('vision-text')} 
         />
-           <FooterCard
+           {/* <FooterCard
           title={translate('prog')}
           summary={translate('pro-text')} 
-        />
+        /> */}
       </div>
 
       <div className='foot'>

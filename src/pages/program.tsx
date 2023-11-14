@@ -4,6 +4,8 @@ import BannerShort from '../components/banner-short'
 import { LangContext } from '../context/lang';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
+// const styles = '../styles/pro.scss';
+import '../styles/pro.scss'
 
 export default function Program() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -15,28 +17,36 @@ export default function Program() {
         title={translate('prog')} 
         summary='' 
       />
-      <Card 
-        title={translate('one')}
-        resume={translate('one-txt')} 
-      />
-      <Card 
-        title={translate('two')}
-        resume={translate('two-txt')}
-      />
+      <div className='pro'>
+        <Card 
+          title={translate('one')}
+          resume={translate('one-txt')}
+          clas='cards' 
+        />
+        <Card 
+          title={translate('two')}
+          resume={translate('two-txt')}
+          clas='cards' 
+        />
 
-      <Card 
-        title={translate('three')}
-        resume={translate('three-txt')} 
-      />
+        <Card 
+          title={translate('three')}
+          resume={translate('three-txt')}
+          clas='cards'  
+        />
+        <Card 
+          title={translate('four')}
+          resume={translate('four-txt')}
+          clas='cards'  
+        />
+      </div>
+     
 
       {/* <div className='our'>
         <div></div>
       </div> */}
 
-      <Card 
-       title={translate('four')}
-       resume={translate('four-txt')} 
-      />
+     
       <Footer />
     </>
   )
