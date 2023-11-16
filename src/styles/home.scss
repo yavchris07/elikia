@@ -6,10 +6,13 @@ $blue:#006cd1;
 $blue1:#003464;
 
 .cont{
-    width: 80%;
-    margin: 25px auto;
+    width: 90%;
+    margin: auto;
     // background-color: red;
     text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
    
     div{
         margin-bottom: 15px;
@@ -26,13 +29,19 @@ $blue1:#003464;
 
     .list{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         gap: 10px;
+        width: 100%;
+        height: 100%;
         .h-card{
             // background: #003464;
+            width: 500px;
+            height: 430px;
             .h-pic{
-                width: 360px;
-                height: 330px;
+                // width: 360px;
+                // height: 330px;
+                width: 100%;
+                height: 100%;
                 // background-color: $blue-grey;
                 img{
                     width: 100%;
@@ -60,21 +69,21 @@ $blue1:#003464;
  
 }
 
-.out{
-    background: url('../assets//volu.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    h1{color: aliceblue;}
-    div{
-        width: 80%;
-        margin: auto;
-        height: 250px;
-        background: rgb(0, 51, 99,.6);
-        text-align: start;
-        padding: 3px;
-        color: aliceblue;
-    }
-}
+// .out{
+//     background: url('../assets//volu.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     h1{color: aliceblue;}
+//     div{
+//         width: 80%;
+//         margin: auto;
+//         height: 250px;
+//         background: rgb(0, 51, 99,.6);
+//         text-align: start;
+//         padding: 3px;
+//         color: aliceblue;
+//     }
+// }
 
 @media screen and (max-width:600px) {
     .out{
@@ -89,7 +98,7 @@ $blue1:#003464;
     //container
     .cont{
         width: 95%;
-        margin: 20px auto;
+        margin: 10px auto;
         // background-color: red;
         text-align: start;
        

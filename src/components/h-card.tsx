@@ -1,7 +1,7 @@
 import {BiBookBookmark} from 'react-icons/bi'
 interface CardProps{
-    title:string;
-    type: string;
+    title?:string;
+    type?: string;
     photo:string
 
 }
@@ -16,7 +16,7 @@ export default function Hcard({title,type,photo}:CardProps){
                     <h1>{title}</h1>
                     <p>{type}</p>
                 </div>
-                <BiBookBookmark />
+                {/* <BiBookBookmark /> */}
             </div>
         </div>
     )
