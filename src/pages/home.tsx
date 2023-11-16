@@ -11,6 +11,7 @@ import c1 from '../assets/annie-spratt-0cgpyigyIkM-unsplash.jpg';
 import c2 from '../assets/annie-spratt-2INKkSrEmc8-unsplash.jpg';
 import c3 from '../assets/annie-spratt-SPS796v4KmM-unsplash.jpg';
 import c4 from '../assets/ecole.jpg';
+import c5 from '../assets/volu.jpg'
 
 
 export default function Home() {
@@ -51,7 +52,10 @@ export default function Home() {
         <div className='list'>
           <Hcard 
             photo={c4}
-            />
+          />
+          <Hcard 
+            photo={c5}
+          />
         </div>
       </div> 
             
