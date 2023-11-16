@@ -7,17 +7,23 @@
 
     .kart{
         // border: 1px solid grey;
+        border: 1px solid grey;
+        border-radius: 4px;
         display: flex;
         align-items: center;
-        gap: 14px;
-        padding: 2px 4px;
+        gap: 4px;
+        padding: 2px 10px;
+        height: 70px;
         .pic{
-            font-size: 45px;
-            border-radius: 50%;
+            font-size: 25px;
+            // border-radius: 50%;
             // background-color: blue;
         }
         .note{
             font-size: 20px;
+            h2{
+                margin: 2px;
+            }
         }
     }
 }
@@ -31,11 +37,12 @@
         justify-content: space-between;
     
         .kart{
-            // border: 1px solid grey;
+            border: 1px solid grey;
+            border-radius: 4px;
             display: flex;
-            
+            height: 40px;
             align-items: center;
-            gap: 14px;
+            gap: 4px;
             padding: 2px 4px;
             .pic{
                 font-size: 25px;

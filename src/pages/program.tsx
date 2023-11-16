@@ -5,8 +5,8 @@ import { LangContext } from '../context/lang';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 // const styles = '../styles/pro.scss';
-import { MdVolunteerActivism } from "react-icons/md";
-import { MdRememberMe } from "react-icons/md";
+import { MdCastForEducation } from "react-icons/md";
+import { IoSchoolSharp } from "react-icons/io5";
 import '../styles/pro.scss'
 
 export default function Program() {
@@ -20,48 +20,20 @@ export default function Program() {
         summary='' 
       />
       <div className='pro'>
-        {/* <Card 
-          title={translate('one')}
-          resume={translate('one-txt')}
-          clas='p'
-        />
-        <Card 
-          title={translate('two')}
-          resume={translate('two-txt')}
-          clas='p'
-        />
-
-        <Card 
-          title={translate('three')}
-          resume={translate('three-txt')}
-          clas='p'
-        />
-        <Card 
-          title={translate('four')}
-          resume={translate('four-txt')}
-         clas='p'
-        /> */}
-
         <Card 
         title={''} 
         resume={translate('one-txt')} 
-        icon={<MdVolunteerActivism />}
-        clas='kart'
+        icon={<MdCastForEducation />}
+        clas='kar'
       />
       <Card 
         title={''} 
         resume={translate('two-txt')} 
-        icon={<MdRememberMe />}
-        clas='kart'
+        icon={<IoSchoolSharp />}
+        clas='kar'
       />
       </div>
-     
-
-      {/* <div className='our'>
-        <div></div>
-      </div> */}
-
-     
+ 
       <Footer />
     </>
   )

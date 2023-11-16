@@ -17,7 +17,7 @@ export default function Store() {
        title={translate('store')}
         summary=''
       />
-      
+      <br />
       <MdOutlineDownloading style={{fontSize:40}}/>
         
       <Card 

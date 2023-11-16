@@ -3,18 +3,28 @@
     margin: auto;
     // background: red;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 6px;
+    grid-template-columns: repeat(2,1fr);
+    // gap: 6px;
+
+    .kar{
+        width: 80%;
+        margin: 10px auto;
+        // background-color: red;
+        // height: auto;
+        display: block;
+        border: 2px solid grey;
+        border-radius: 5px;
+        .pic{
+            width: 20%;
+            margin: auto;
+            // background: red;
+            margin-top: 13px;
+            font-size: 27px;
+        }
+        .note{}
+    }
 }
-.cards{
-    width: 80%;
-    margin: 10px auto;
-    // background-color: red;
-    height: auto;
-    display: flex;
-    border: 1px solid grey;
-    // border-radius: 2px;
-}
+
 
 @media screen and (max-width: 600px) {
     .pro{
@@ -24,5 +34,6 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 5px;
+        
     } 
 }

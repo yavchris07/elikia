@@ -18,7 +18,7 @@ export default function WaysToGive() {
         title='' 
         resume={translate('site')}   
       /> */}
-      <div className='pay'>
+      <div className='pays'>
         {/* <div>
           <img src={airtel} alt="" />
         </div>
