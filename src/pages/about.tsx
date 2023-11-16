@@ -21,15 +21,18 @@ export default function About() {
       <div className='about'>
         <Card 
           title={translate('who')} 
-          resume={translate('who-text')} 
+          resume={translate('who-text')}
+          clas='p'
         />
         <Card 
           title={translate('mission')}
-          resume={translate('mission-text')} 
+          resume={translate('mission-text')}
+          clas='p' 
         />
         <Card 
           title={translate('vision')}
           resume= {translate('vision-text')} 
+          clas='p'
         />
       </div>
       

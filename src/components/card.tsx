@@ -1,13 +1,16 @@
+import { ReactNode } from "react"
+
 interface cardProps{
     title : string,
     resume: string,
-    clas? : string
+    icon? : ReactNode,
+    clas:string
 }
 
-export default function Card({title,resume,clas}:cardProps){
+export default function Card({title,resume,icon,clas}:cardProps){
     return(
         <div className={clas}>
-            {/* <div className="pic">about-cards</div> */}
+            <div className="pic">{icon}</div>
             <div className="note">
                 <h2>{title}</h2>
                 <p>{resume}</p>

@@ -1,9 +1,9 @@
 {
     "home" : "Accueil",
     "about" : "A propos",
-    "programs":"Notre programme",
-    "get-involved":"Être impliqué ",
-    "way-to-give":"Façons de donner",
+    "programs":"Nos programmes",
+    "get-involved":"Nous rejoindre ",
+    "way-to-give":"Faire un don",
     "donate":"Faire un don",
     "text": "Raviver pour un avenir meilleur",
     "slogan":"Construire des communautés en responsabilisant un individu à la fois; Allumer des rêves; Aider à écrire de nouvelles histoires d’espoir",
@@ -33,7 +33,10 @@
     "four":"Quatrième",
     "four-txt":"Anaweza (Elle peut)",
     "get":"• Être impliqué",
-    "volunteer":"Faites du bénévolat avec nous",
+    "volunteer":"devenez bénévole",
     "way":"• Façon de donner",
-    "site":"Paiement mobile :("
+    "site":"En cours de developpement :(",
+    "store":"• Magasin",
+    "partner":"Devenez partnaire",
+    "sub":"s'inscrire"
 }

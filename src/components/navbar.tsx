@@ -46,6 +46,7 @@ export default function Navbar() {
             {translate('programs')}
           </NavLink>
         </li>
+       
         <li>
           <NavLink 
             to={'/get-involved'} 
@@ -54,6 +55,15 @@ export default function Navbar() {
             {translate('get-involved')}
           </NavLink>
         </li>
+        <li>
+          <NavLink 
+            to={'/store'} 
+            className='link'
+          >
+            {translate('store')}
+          </NavLink>
+        </li>
+
         <li>
           <NavLink 
             to={'/way-to-give'} 

@@ -6,20 +6,7 @@ import '../styles/home.scss';
 import { LangContext } from '../context/lang';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-// import v1 from '../assets/vik 2.jpg';
-// import ph from '../assets/phyz.jpg';
-import en from '../assets/en.jpg';
-import sk from '../assets/skol.jpg';
-import st from '../assets/study.jpg';
 
-import mto from '../assets/kwetu.jpg';
-import pt from '../assets/petit.jpg';
-import mama from '../assets/mama.jpg';
-
-import mac from '../assets/mac.jpg';
-import mach from '../assets/mach.jpg';
-import kwetu from '../assets/mto.jpg';
-import bat from '../assets/bat.jpg';
 
 export default function Home() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -36,7 +23,7 @@ export default function Home() {
         </div>
 
         <div className='list'>
-          <Hcard 
+          {/* <Hcard 
             title='Book of leadership' 
             type='Elikia book helping'
             photo={sk}
@@ -50,7 +37,7 @@ export default function Home() {
             title='La clé, Education' 
             type='Elikia book helping'
             photo={st}
-          />
+          /> */}
         </div>
        
         {/* <Hcard />
@@ -65,7 +52,7 @@ export default function Home() {
 
         <div className='list'>
           
-          <Hcard 
+          {/* <Hcard 
             title='La culture' 
             type='Elikia book helping'
             photo={mto}
@@ -79,7 +66,7 @@ export default function Home() {
             title='La nutrition' 
             type='Elikia book helping'
             photo={pt}
-          />
+          /> */}
         </div>
        
         {/* <Hcard />
@@ -102,7 +89,7 @@ export default function Home() {
         </div>
 
         <div className='list'>
-          <Hcard 
+          {/* <Hcard 
             title='La vie, une mère' 
             type='Elikia book helping'
             photo={mama}
@@ -111,12 +98,12 @@ export default function Home() {
             title='History, la guerre !' 
             type='Elikia book helping'
             photo={bat}
-            />
+          />
           <Hcard 
             title=' The entertainment' 
             type='Elikia book helping'
             photo={kwetu}
-          />
+          /> */}
         </div>
        
         {/* <Hcard />

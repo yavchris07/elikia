@@ -5,10 +5,6 @@ import {MdOutlineDownloading} from 'react-icons/md'
 import { LangContext } from '../context/lang';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import airtel from '../assets/air.png';
-import voda from '../assets/vod.png';
-import afri from '../assets/africel.jpg';
-import orange from '../assets/orange.jpg';
 import '../styles/way.scss';
 
 export default function WaysToGive() {
@@ -18,12 +14,12 @@ export default function WaysToGive() {
     <>
       <Navbar />
       <BannerShort title={translate('way')} summary=''/>
-      <Card 
+      {/* <Card 
         title='' 
         resume={translate('site')}   
-      />
+      /> */}
       <div className='pay'>
-        <div>
+        {/* <div>
           <img src={airtel} alt="" />
         </div>
         <div>
@@ -34,9 +30,16 @@ export default function WaysToGive() {
         </div>
         <div>
           <img src={voda} alt="" />
-        </div>
+        </div> */}
       </div>
-      {/* <MdOutlineDownloading /> */}
+      <br />
+      <br />
+      <MdOutlineDownloading style={{fontSize:40}}/>
+      <Card 
+        title='' 
+        resume={translate('site')}
+        clas='i'   
+      />
       
       <Footer />
     </>

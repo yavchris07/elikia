@@ -16,7 +16,7 @@ export default function Letter() {
                 <h3>{translate('letter-text')}</h3>
                 <span>{translate('spam')}</span>
             </div>
-            <button type="button">{translate('btn-letter')}</button>
+            <button type="button">{translate('sub')}</button>
         </div>
     </div>
   )

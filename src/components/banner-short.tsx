@@ -4,13 +4,14 @@ import '../styles/banner1.scss'
 interface titleProps{
   title:string;
   summary: string;
-  path?:string
+  path?:string,
+  bg?:string;
 }
 
 function BannerShort({title,summary}:titleProps) {
   return (
     <section className='banner1'>
-       <div className='cover-short'>
+       <div className='cover-short' >
         {/* <p>{path}</p> */}
         <h1>{title}</h1>
         {/* le logo de l fondtion */}
