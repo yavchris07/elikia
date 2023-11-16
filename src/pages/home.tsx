@@ -21,10 +21,10 @@ export default function Home() {
       <Navbar />
       <Banner /> 
        
-      <div className='cont'>
+      <div className='containers'>
 
         <div>
-          <h1>Elikia Foundation</h1>
+          <h1>{translate('title-1')}</h1>
           <span>Helping write new stories of hope</span>
         </div>
    
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </div> 
 
-      <div className='cont'>
+      <div className='containers'>
         <div>
           <h1>{translate('title')}</h1>
           <span>Helping communities</span>
