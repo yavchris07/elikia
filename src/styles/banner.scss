@@ -16,7 +16,7 @@ $blue-grey : rgb(239 242 250/1);
     background: url('../assets/b1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 670px;
     width: 100%;
     text-align: center;
 
@@ -24,6 +24,7 @@ $blue-grey : rgb(239 242 250/1);
         width: 100%;
         height: 100%;
         text-align: center;
+        background: $back-opacity;
 
         h1{
             padding-top: 220px;
@@ -62,6 +63,7 @@ $blue-grey : rgb(239 242 250/1);
                 text-align: center;
                 // background: red;
                 position: absolute;
+                text-align: center;
 
             }
             &:hover{

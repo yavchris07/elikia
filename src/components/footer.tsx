@@ -1,28 +1,32 @@
 import React, { useContext, useState } from 'react';
 import Letter from './letter';
 import '../styles/footer.scss';
-// import SUM from '../models/goal-data';
-// import Summary from '../models/goal';
 import { LangContext } from '../context/lang';
 import FooterCard from './footer-card';
 
-export default function Footer() {
+interface footProps{
+  button:boolean
+}
+export default function Footer({button}:footProps) {
 
   // const [sum] = useState<Summary[]>(SUM);
   const { dispatch: { translate }} = useContext(LangContext);
+
   return (
     <> 
-      <Letter />
+      <Letter button={button}/>
       <div className='container'> 
         {/* Who we are */}
         <FooterCard
           title={translate('who')}
           summary={translate('who-text')} 
         />
+        {/* our mission */}
         <FooterCard
           title={translate('mission')}
           summary={translate('mission-text')} 
         />
+        {/* our vision */}
          <FooterCard
           title={translate('vision')}
           summary={translate('vision-text')} 

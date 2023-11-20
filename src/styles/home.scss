@@ -85,6 +85,86 @@ $blue1:#003464;
 //     }
 // }
 
+.left-card{
+    width: 80%;
+    height: 450px;
+    margin:auto;
+    margin-top: 35px;
+    display: flex;
+    .picture{
+        width: 50%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .notes{
+        width: 45%;
+        h1{
+            font-size: 27px;
+            color: grey;
+        }
+        p{
+            color: grey;
+        }
+        button{
+            background: none;
+            font-size: 15px;
+            border : 1px solid grey;
+            padding: 10px 60px;
+            cursor: pointer;
+            &:hover{
+                background: #000;
+                color: white;
+
+            }
+        }
+    } 
+}
+
+.rigth-card{
+    width: 80%;
+    height: 450px;
+    margin:auto;
+    margin-top: 35px;
+    display: flex;
+    .picture{
+        width: 50%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .notes{
+        width: 45%;
+        h1{
+            font-size: 27px;
+            color: grey;
+        }
+        p{
+            color: grey;
+        }
+        button{
+            background: none;
+            font-size: 15px;
+            border : 1px solid grey;
+            padding: 10px 60px;
+            cursor: pointer;
+            &:hover{
+                background: #000;
+                color: white;
+
+            }
+        }
+    } 
+}
+
+
+
 @media screen and (max-width:600px) {
     .out{
         h1{color: aliceblue;}
@@ -96,7 +176,7 @@ $blue1:#003464;
     }
 
     //container
-    .cont{
+    .containers{
         width: 95%;
         margin: 10px auto;
         // background-color: red;
@@ -119,6 +199,8 @@ $blue1:#003464;
             display: grid;
             grid-template-columns: repeat(1,1fr);
             gap: 7px;
+            width: 100%;
+            height: 100%;
             .h-card{
                 // background: #003464;
                 .h-pic{

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import BannerShort from '../components/banner-short'
 import Card from '../components/card'
 import {MdOutlineDownloading} from 'react-icons/md'
@@ -8,7 +8,9 @@ import Footer from '../components/footer';
 import '../styles/way.scss';
 
 export default function WaysToGive() {
-  const { dispatch: { translate }} = useContext(LangContext);
+
+  const { dispatch: { translate }} = useContext(LangContext);  
+  const [button] = useState<boolean>(false);
   
   return (
     <>
@@ -41,7 +43,7 @@ export default function WaysToGive() {
         clas='i'   
       />
       
-      <Footer />
+      <Footer button={button}/>
     </>
   )
 }

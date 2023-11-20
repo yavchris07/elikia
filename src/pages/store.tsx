@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import BannerShort from '../components/banner-short';
 import { MdOutlineDownloading } from 'react-icons/md';
 import Card from '../components/card';
@@ -9,6 +9,7 @@ import { LangContext } from '../context/lang';
 
 export default function Store() {
   const { dispatch: { translate }} = useContext(LangContext);
+  const [on] = useState<boolean>(false);
   
   return (
     <>
@@ -26,7 +27,7 @@ export default function Store() {
         clas='store-card'
       />
      
-      <Footer />
+      <Footer button={on}/>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import Card from '../components/card'
 import BannerShort from '../components/banner-short'
 import { LangContext } from '../context/lang';
@@ -11,6 +11,7 @@ import '../styles/pro.scss'
 
 export default function Program() {
   const { dispatch: { translate }} = useContext(LangContext);
+  const [on] = useState<boolean>(false);
   
   return (
     <>
@@ -34,7 +35,7 @@ export default function Program() {
       />
       </div>
  
-      <Footer />
+      <Footer button={on}/>
     </>
   )
 }

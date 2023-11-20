@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import BannerShort from '../components/banner-short'
 import Card from '../components/card'
 import { LangContext } from '../context/lang';
@@ -12,6 +12,7 @@ import '../styles/get.scss';
 
 export default function GetInvolved() {
   const { dispatch: { translate }} = useContext(LangContext);
+  const [on] = useState<boolean>(false);
   
   return (
     <>
@@ -41,7 +42,7 @@ export default function GetInvolved() {
           <img src={volu} alt="" />
         </div>
       </div> */}
-      <Footer />
+      <Footer button={on}/>
     </>
   )
 }

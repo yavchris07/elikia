@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import BannerShort from '../components/banner-short';
 import Card from '../components/card';
 import '../styles/about.scss'
@@ -9,6 +9,7 @@ import Footer from '../components/footer';
 
 export default function About() {
   const { dispatch: { translate }} = useContext(LangContext);
+  const [on] = useState<boolean>(false);
   
   return (
     <>
@@ -42,7 +43,7 @@ export default function About() {
       </div> */}
 
       
-      <Footer />
+      <Footer button={on}/>
     </>
   )
 }
