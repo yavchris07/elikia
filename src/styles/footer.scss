@@ -67,36 +67,52 @@ $blue1:#003464;
     }
 
 }
+.f{
+    background: #003464;
+    width: 100%;
 
-.container{
-    // background: grey;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    margin: 10px auto 50px;
-    padding: 2px 40px;
-    width: 80%;
-
-    .card{
-        width: 220px;
-        h4{
-            font-size: 20px;
-            color: #003464;
+    .container{
+        background: #003464;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin: 10px auto 50px;
+        padding: 2px 40px;
+        width: 80%;
+    
+        .card{
+            width: 220px;
+            h4{
+                font-size: 20px;
+                color: white;
+            }
+            p{
+                font-size: 17px;
+                color: grey;
+            }
         }
-        p{
-            font-size: 17px;
-            color: grey;
+    }
+    
+    .foot{
+        background: #001d38;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            font-size: 12px;
+            padding: 40px;
+            color: white;
+            // background: #003464;
+        }
+        .so{
+            color: white;
+            display: flex;
+            gap: 5px;
         }
     }
 }
 
-.foot{
-    span{
-        font-size: 12px;
-        padding: 40px;
-        color: #003464;
-    }
-}
 
 
 @media screen and (max-width:600px) {
