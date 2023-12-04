@@ -2,8 +2,8 @@
     width: 80%;
     margin: auto;
     // background: red;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    // display: grid;
+    // grid-template-columns: repeat(2,1fr);
     // gap: 6px;
 
     .kar{
@@ -12,11 +12,12 @@
         // background-color: red;
         // height: auto;
         display: block;
-        border: 2px solid grey;
+        // border: 2px solid grey;
+        text-align: start;
         border-radius: 5px;
         .pic{
             width: 20%;
-            margin: auto;
+            // margin: auto;
             // background: red;
             margin-top: 13px;
             font-size: 27px;
@@ -34,6 +35,25 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 5px;
+
+        .kar{
+            width: 100%;
+            margin: 10px auto;
+            // background-color: red;
+            // height: auto;
+            display: block;
+            // border: 2px solid grey;
+            text-align: start;
+            border-radius: 5px;
+            .pic{
+                width: 20%;
+                // margin: auto;
+                // background: red;
+                margin-top: 13px;
+                font-size: 27px;
+            }
+            .note{}
+        }
         
     } 
 }

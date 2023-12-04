@@ -43,7 +43,7 @@ export default function WaysToGive() {
         clas='i'   
       />
       
-      <Footer button={button}/>
+      <Footer />
     </>
   )
 }

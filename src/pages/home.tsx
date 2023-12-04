@@ -1,21 +1,13 @@
 import React, { useContext, useState } from 'react';
 import Banner from '../components/banner';
 // import CardList from '../components/card-list';
-import Hcard from '../components/h-card';
 import '../styles/home.scss';
 import { LangContext } from '../context/lang';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import Popup from '../components/popup';
 import LeftCard from '../components/left-card';
-import RightCard from '../components/rigth-card';
-
-import c1 from '../assets/annie-spratt-0cgpyigyIkM-unsplash.jpg'
-import c2 from '../assets/annie-spratt-2INKkSrEmc8-unsplash.jpg';
-import c3 from '../assets/annie-spratt-SPS796v4KmM-unsplash.jpg';
-import c4 from '../assets/ecole.jpg';
-import BannerShort from '../components/banner-short';
-
+import RightCard from '../components/right-card';
+ 
 import { TbSteam } from "react-icons/tb";
 import { GiStairsGoal } from "react-icons/gi";
 import { LiaLowVisionSolid } from "react-icons/lia";
@@ -23,23 +15,11 @@ import { LiaLowVisionSolid } from "react-icons/lia";
 
 export default function Home() {
   const { dispatch: { translate }} = useContext(LangContext);
-  const [button] = useState<boolean>(false);
   
   return (
     <>
       <Navbar />
       <Banner /> 
-       {/* <div className='out'>
-       <LeftCard img={c3}/>
-        <RightCard img={c2}/>
-       </div>
-      
-      <BannerShort title={'Elikia'} summary={translate('about-summary')} />
-
-      <div className='out-1'>
-        <LeftCard img={c1}/>
-        <RightCard img={c4}/>
-      </div> */}
 
       <div className='home-about'>
           <div className='card-one'>
@@ -75,24 +55,30 @@ export default function Home() {
       </div>
 
       <div className='out'>
-       <LeftCard img={c3}/>
-        <RightCard img={c2}/>
+       <LeftCard 
+          title={translate('programme')} 
+          brnck={translate('education')} 
+          subtitle={translate('one-txt')} 
+          summary={translate('pro-educ').substring(0,320)+'...'}
+          root={'/our-programs'}
+        />
+        <RightCard
+         title={translate('invol')} 
+         brnck={translate('join')} 
+         subtitle={translate('vol')} 
+         summary={translate('vol-txt').substring(0,320)+'...'}
+         root={'/get-involved'}
+        />
+         <LeftCard 
+            title={translate('invol')} 
+            brnck={translate('join')}  
+            subtitle={translate('partner')} 
+            summary={translate('pt-txt').substring(0,320)+'...'}
+            root={'/get-involved'}
+          />
       </div>
-      
-      {/* <BannerShort title={'Elikia'} summary={translate('about-summary')} /> */}
-
-      {/* <div className='out-1'>
-        <LeftCard img={c1}/>
-        <RightCard img={c4}/>
-      </div> */}
-     
-
-        {/* <Popup trigger={button}>
-          <h3>Subscribe</h3>
-          <p>This where you'll subscribe to join us</p>
-        </Popup> */}
-           
-    <Footer button={button}/>
+         
+      <Footer />
     </>
   )
 }

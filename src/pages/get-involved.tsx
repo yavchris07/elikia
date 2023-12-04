@@ -22,27 +22,22 @@ export default function GetInvolved() {
         summary='' 
       />
       <div className='cont'>
-      <Card 
-        title={''} 
-        resume={translate('volunteer')} 
-        icon={<MdVolunteerActivism />}
-        clas='kart'
-      />
-      <Card 
-        title={''} 
-        resume={translate('partner')} 
-        icon={<MdRememberMe />}
-        clas='kart'
-      />
+        <Card 
+          title={translate('vol')}
+          resume= {translate('vol-txt')}
+          icon={<MdVolunteerActivism />}
+          clas='kart'
+        />
 
+        <Card 
+          title={translate('partner')}
+          resume={translate('pt-txt')} 
+          icon={<MdRememberMe />}
+          clas='kart'
+        />
       </div>
       
-      {/* <div className='pay'>
-        <div>
-          <img src={volu} alt="" />
-        </div>
-      </div> */}
-      <Footer button={on}/>
+      <Footer />
     </>
   )
 }

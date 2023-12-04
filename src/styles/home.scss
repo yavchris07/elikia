@@ -5,148 +5,198 @@ $blue-grey : rgb(239 242 250/1);
 $blue:#006cd1;
 $blue1:#003464;
 
-.containers{
-    width: 80%;
-    margin: auto;
-    // background-color: red;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+// .containers{
+//     width: 80%;
+//     margin: auto;
+//     // background-color: red;
+//     text-align: start;
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 10px;
    
-    div{
-        margin-bottom: 15px;
-        h1{
-            margin: 2px;
-            font-size: 20px;
-        }
-        span{
-            font-size: 12px;
-            color: grey;
+//     div{
+//         margin-bottom: 15px;
+//         h1{
+//             margin: 2px;
+//             font-size: 20px;
+//         }
+//         span{
+//             font-size: 12px;
+//             color: grey;
            
-        }
-    }
+//         }
+//     }
 
-    .list{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-        width: 100%;
-        height: 100%;
-        .h-card{
-            // background: #003464;
-            width: 500px;
-            height: 430px;
-            .h-pic{
-                // width: 360px;
-                // height: 330px;
-                width: 100%;
-                height: 100%;
-                // background-color: $blue-grey;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-            .not{
-                display: flex;
-                justify-content: space-between;
-                padding: 1px 2px;
-                h1{
-                    font-size: 16px;
-                    margin: 1px;
-                }
-                p{
-                    margin: 2px;
-                    font-size: 10px;
-                    color: grey;
-                }
-            }
-        }
-    }
+//     .list{
+//         display: grid;
+//         grid-template-columns: repeat(2,1fr);
+//         gap: 10px;
+//         width: 100%;
+//         height: 100%;
+//         .h-card{
+//             // background: #003464;
+//             width: 500px;
+//             height: 430px;
+//             .h-pic{
+//                 // width: 360px;
+//                 // height: 330px;
+//                 width: 100%;
+//                 height: 100%;
+//                 // background-color: $blue-grey;
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                     object-fit: cover;
+//                 }
+//             }
+//             .not{
+//                 display: flex;
+//                 justify-content: space-between;
+//                 padding: 1px 2px;
+//                 h1{
+//                     font-size: 16px;
+//                     margin: 1px;
+//                 }
+//                 p{
+//                     margin: 2px;
+//                     font-size: 10px;
+//                     color: grey;
+//                 }
+//             }
+//         }
+//     }
 
  
-}
+// }
 
 
-.left-card{
+
+//out
+.out{
     width: 80%;
-    height: 450px;
-    margin:auto;
-    margin-top: 35px;
-    display: flex;
-    .picture{
-        width: 50%;
-        height: 100%;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-    .notes{
-        width: 45%;
-        h1{
-            font-size: 27px;
-            color: grey;
-        }
-        p{
-            color: grey;
-        }
-        button{
-            background: none;
-            font-size: 15px;
-            border : 1px solid grey;
-            padding: 10px 60px;
-            cursor: pointer;
-            &:hover{
-                background: #000;
-                color: white;
+    height: auto;
+    margin: auto;
 
+    //left
+    .left-card{
+        width: 80%;
+        height: 280px;
+        margin: 20px auto;
+        margin-top: 35px;
+        display: flex;
+
+        .picture{
+            width: 50%;
+            height: 100%;
+            img{
+                width: 120px;
+                height: 140px;
+                margin-top: 30px;
+                object-fit: cover;
+            }
+            h1,h2{
+                margin: 4px;
+                text-transform: uppercase;
+            }
+            h2{
+                color: grey;
             }
         }
-    } 
-}
+        .notes{
+            width: 45%;
+            display: block;
+            
+            h1{
+                font-size: 27px;
+                color: grey;
+            }
+            p{color: grey;}
 
-.rigth-card{
-    width: 80%;
-    height: 450px;
-    margin:auto;
-    margin-top: 35px;
-    display: flex;
-    .picture{
-        width: 50%;
-        height: 100%;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+            .btn{
+                display: flex;
+                width: 20%;
+                margin: auto;
+
+                button{
+                    background: none;
+                    font-size: 15px;
+                    padding: 5px 5px;
+                    border: none;
+                    cursor: pointer;
+                    color: $blue;
+                }
+                .op{
+                    padding: 5px;
+                    color: $blue;
+                }
+                
+            }
+            
+        } 
     }
-    .notes{
-        width: 45%;
-        h1{
-            font-size: 27px;
-            color: grey;
-        }
-        p{
-            color: grey;
-        }
-        button{
-            background: none;
-            font-size: 15px;
-            border : 1px solid grey;
-            padding: 10px 60px;
-            cursor: pointer;
-            &:hover{
-                background: #000;
-                color: white;
 
+    //right
+    .right-card{
+        width: 80%;
+        height: 280px;
+        margin: 20px auto;
+        margin-top: 35px;
+        display: flex;
+
+        .picture{
+            width: 50%;
+            height: 100%;
+            img{
+                width: 120px;
+                height: 140px;
+                margin-top: 30px;
+                object-fit: cover;
+            }
+            h1,h2{
+                margin: 4px;
+                text-transform: uppercase;
+            }
+            h2{
+                color: grey;
             }
         }
-    } 
+
+         .notes{
+            width: 45%;
+            display: block;
+            
+            h1{
+                font-size: 27px;
+                color: grey;
+            }
+            p{color: grey;}
+
+            .btn{
+                display: flex;
+                width: 20%;
+                margin: auto;
+
+                button{
+                    background: none;
+                    font-size: 15px;
+                    padding: 5px 5px;
+                    border: none;
+                    cursor: pointer;
+                    color: $blue;
+                }
+                .op{
+                    padding: 5px;
+                    color: $blue;
+                }
+                
+            }
+            
+        }
+    }
+    
 }
+
+
 
 
 .home-about{
@@ -226,104 +276,207 @@ $blue1:#003464;
 
 @media screen and (max-width:600px) {
 
-
-    .out {
-        width: 97%;
-        background: red;
-        padding: 2px;
+    .home-about{
+         
+        height: auto;
+        
+        margin: 20px 0;
         display: grid;
         grid-template-columns: repeat(1,1fr);
-    }
-
-    .out-1 {
-        width: 97%;
-        background: blue;
-        padding: 2px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-    //Left
-    .left-card{
-        width: 90%;
-        height: 300px;
-        margin: 10px auto;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        .picture{
-            width: 100%;
-            height: 40%;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+        
+    
+        .card-one{
+             
+            .pi{
+                // background: #ff0006;
+                margin: 10px;
+            }
+            h1{font-size: 20px; margin: 5px;}
+            p{
+                font-size: 15px;
+            }
+            a{
+                color: white;
+                padding: 7px;
+                margin-bottom: 5px;
+                font-size: 12px;
             }
         }
-        .notes{
-            width: 100%;
-            height: 45%;
-            h1{
-                font-size: 20px;
-                color: grey;
-            }
-            p{
-                color: grey;
-            }
-            button{
-                background: none;
-                font-size: 15px;
-                border : 1px solid grey;
-                padding: 10px 60px;
-                cursor: pointer;
-                &:hover{
-                    background: #000;
-                    color: white;
-    
-                }
-            }
-        } 
-    }
 
-    //rigth
-    .rigth-card{
-        width: 90%;
-        height: 400px;
-        margin:auto;
-        margin-top: 35px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 5px;
-        .picture{
-            width: 100%;
-            height: 50%;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+        .card-two{
+             
+            .pi{
+                // background: #ff0006;
+                margin: 10px;
+            }
+            h1{font-size: 20px; margin: 5px;}
+            p{
+                font-size: 15px;
+            }
+            a{
+                color: white;
+                padding: 7px;
+                font-size: 12px;
             }
         }
-        .notes{
-            width: 100%;
-            h1{
-                font-size: 20px;
-                color: grey;
+        .card-three{
+            .pi{
+                // background: #ff0006;
+                margin: 10px;
             }
+            h1{font-size: 20px; margin: 5px;}
             p{
-                color: grey;
-            }
-            button{
-                background: none;
                 font-size: 15px;
-                border : 1px solid grey;
-                padding: 10px 60px;
-                cursor: pointer;
-                &:hover{
-                    background: #000;
-                    color: white;
-    
+            }
+            a{
+                color: white;
+                padding: 7px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    //out
+    .out{
+        width: 90%;
+        height: auto;
+        margin: auto;
+
+        //left
+        .left-card{
+            width: 90%;
+            height: 280px;
+            margin: 10px auto;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            // background-color: red;
+
+            .picture{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // background: #003464;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 8px;
+                    object-fit: cover;
+                }
+                h1,h2{
+                    // margin: 4px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+                h2{
+                    color: grey;
+                    
                 }
             }
-        } 
+            .notes{
+                width: 100%;
+                // height: 45%;
+                display: block;
+                
+                h1{
+                    font-size: 20px;
+                    color: grey;
+                }
+                p{color: grey; font-size: 15px;}
+
+                .btn{
+                    display: flex;
+                    width: 20%;
+                    margin: auto;
+
+                    button{
+                        background: none;
+                        font-size: 13px;
+                        padding: 5px 5px;
+                        border: none;
+                        cursor: pointer;
+                        color: $blue;
+                    }
+                    .op{
+                        padding: 5px;
+                        color: $blue;
+                    }
+                    
+                }
+                
+            } 
+        }
+
+        //right
+        .right-card{
+            width: 80%;
+            height: 280px;
+            margin: 20px auto;
+            margin-top: 35px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            .picture{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 8px;
+                    object-fit: cover;
+                }
+                h1,h2{
+                    // margin: 4px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+                h2{
+                    color: grey;
+                    
+                }
+            }
+
+            .notes{
+                width: 100%;
+                // height: 45%;
+                display: block;
+                
+                h1{
+                    font-size: 20px;
+                    color: grey;
+                }
+                p{color: grey; font-size: 15px;}
+
+                .btn{
+                    display: flex;
+                    width: 20%;
+                    margin: auto;
+
+                    button{
+                        background: none;
+                        font-size: 15px;
+                        padding: 5px 5px;
+                        border: none;
+                        cursor: pointer;
+                        color: $blue;
+                    }
+                    .op{
+                        padding: 5px;
+                        color: $blue;
+                    }
+                    
+                }
+                
+            }
+        }
+        
     }
     
 }

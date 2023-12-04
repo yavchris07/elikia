@@ -27,7 +27,7 @@ export default function Store() {
         clas='store-card'
       />
      
-      <Footer button={on}/>
+      <Footer />
     </>
   )
 }

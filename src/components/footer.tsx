@@ -11,7 +11,7 @@ import { FaInstagram } from "react-icons/fa";
 interface footProps{
   button:boolean
 }
-export default function Footer({button}:footProps) {
+export default function Footer() {
 
   // const [sum] = useState<Summary[]>(SUM);
   const { dispatch: { translate }} = useContext(LangContext);
@@ -20,12 +20,6 @@ export default function Footer({button}:footProps) {
     <div className='f'> 
       {/* <Letter button={button}/> */}
       <div className='container'> 
-        {/* Who we are */}
-        {/* <FooterCard
-          // title={translate('who')}
-          title='Contatct'
-          summary="09898767654  "
-        /> */}
 
         <div className='card'>
           <h4>Contact</h4>
@@ -38,23 +32,16 @@ export default function Footer({button}:footProps) {
           <h4>physical address</h4>
           <p>Goma - North kivu</p>
           <p>Commune de Goma</p>
-          <p>Quartier</p>
-          <p>N*</p>
+          <p>Quartier les volcans, 100</p>
         </div>
 
         {/* our vision */}
          <FooterCard
-          // title={translate('vision')}
+         
           title='E-mail'
           summary='infos@elikia.org' 
         />
 
-      
-
-           {/* <FooterCard
-          title={translate('prog')}
-          summary={translate('pro-text')} 
-        /> */}
       </div>
 
       <div className='foot'>

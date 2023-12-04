@@ -19,20 +19,41 @@ export default function About() {
         title={translate('who')} 
         summary= {translate('about-summary')}
       />
+      
       <div className='about'>
         <Card 
           title={translate('who')} 
           resume={translate('who-text')}
           clas='p'
         />
+       
         <Card 
+          title={translate('vision')}
+          resume= {translate('vision-text')} 
+          clas='p'
+        />
+
+         <Card 
           title={translate('mission')}
           resume={translate('mission-text')}
           clas='p' 
         />
+        <div className='vl'>
+          <h1>{translate('our-v')}</h1>
+          <p>{translate('v1')}<span>{translate('v1t')}</span></p>
+          <p>{translate('v2')}<span>{translate('v2t')}</span></p>
+          <p>{translate('v3')}<span>{translate('v3t')}</span></p>
+          <p>{translate('v4')}<span>{translate('v4t')}</span></p>
+          <p>{translate('v4')}<span>{translate('v5t')}</span></p>
+        </div>
         <Card 
-          title={translate('vision')}
-          resume= {translate('vision-text')} 
+          title={translate('our-p')}
+          resume= {translate('our-p-txt')} 
+          clas='p'
+        />
+        <Card 
+          title={translate('bord')}
+          resume= {translate('')} 
           clas='p'
         />
       </div>
@@ -43,7 +64,7 @@ export default function About() {
       </div> */}
 
       
-      <Footer button={on}/>
+      <Footer />
     </>
   )
 }

@@ -21,21 +21,21 @@ export default function Program() {
         summary='' 
       />
       <div className='pro'>
-        <Card 
-        title={''} 
-        resume={translate('one-txt')} 
-        icon={<MdCastForEducation />}
-        clas='kar'
-      />
+        {/* <Card 
+          title={translate('vol')} 
+          resume={translate('pt-txt')} 
+          icon={<MdCastForEducation />}
+          clas='kar'
+        /> */}
       <Card 
-        title={''} 
-        resume={translate('two-txt')} 
+        title={translate('two-txt')} 
+        resume={translate('pro-educ')}
         icon={<IoSchoolSharp />}
         clas='kar'
       />
       </div>
  
-      <Footer button={on}/>
+      <Footer />
     </>
   )
 }
