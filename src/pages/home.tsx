@@ -11,6 +11,8 @@ import RightCard from '../components/right-card';
 import { TbSteam } from "react-icons/tb";
 import { GiStairsGoal } from "react-icons/gi";
 import { LiaLowVisionSolid } from "react-icons/lia";
+import log from '../assets/cm.jpg';
+import lg from '../assets/logo.png';
 
 
 export default function Home() {
@@ -19,7 +21,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Banner /> 
+      <Banner />
+
+      <div className='slogan'>
+        <p>{translate('slogan')}</p>
+        <p>{translate('slogan1')}</p>
+        <h5>Elikya Foundation </h5>
+      </div>
 
       <div className='home-about'>
           <div className='card-one'>
@@ -69,6 +77,19 @@ export default function Home() {
          summary={translate('vol-txt').substring(0,320)+'...'}
          root={'/get-involved'}
         />
+
+        <div className='in'>
+          <div className='p'>
+            <img src={log} alt="" />
+            <div className='o'></div>
+          </div>
+          <div className='t'>
+            <p>{translate('op')}</p>
+            <img src={lg} alt=""  />
+            <h3>Elikya Foundation</h3>
+          </div>
+        </div>
+
          <LeftCard 
             title={translate('invol')} 
             brnck={translate('join')}  
