@@ -8,9 +8,9 @@ interface titleProps{
   bg?:string;
 }
 
-function BannerShort({title,summary}:titleProps) {
+function BannerShort({title,summary,bg}:titleProps) {
   return (
-    <section className='banner1'>
+    <section className='banner1' style={{backgroundImage:bg}}>
        <div className='cover-short' >
         {/* <p>{path}</p> */}
         <h1>{title}</h1>

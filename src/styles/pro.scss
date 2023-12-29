@@ -1,13 +1,9 @@
 .pro{
     width: 80%;
     margin: auto;
-    // background: red;
-    // display: grid;
-    // grid-template-columns: repeat(2,1fr);
-    // gap: 6px;
 
     .kar{
-        width: 80%;
+        width: 100%;
         margin: 10px auto;
         // background-color: red;
         // height: auto;
@@ -22,7 +18,11 @@
             margin-top: 13px;
             font-size: 27px;
         }
-        .note{}
+        .note{
+            p{
+                font-size: 20px;
+            }
+        }
     }
 }
 

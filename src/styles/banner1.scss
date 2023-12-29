@@ -9,12 +9,11 @@ $blue-grey : rgb(239 242 250/1);
 $blue:#003464;
 
 .banner1{
-    background: url('../assets/cm.jpg');
+    background: url('../assets/t.jpg');
     background-size: cover;
     // background: $blue;
-    height: 400px;
+    height: 450px;
     width: 100%;
-    // padding: 10px;
     margin: 0px;
 
     .cover-short{
@@ -25,7 +24,7 @@ $blue:#003464;
         color: $white-kolor;
         text-align: center;
         h1{
-            padding-top: 160px;
+            padding-top: 210px;
             font-size: 50px;
             // font-weight: 400;
             margin: 0;

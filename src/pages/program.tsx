@@ -7,7 +7,8 @@ import Navbar from '../components/navbar';
 // const styles = '../styles/pro.scss';
 import { MdCastForEducation } from "react-icons/md";
 import { IoSchoolSharp } from "react-icons/io5";
-import '../styles/pro.scss'
+import '../styles/pro.scss';
+import p from '../assets/p.jpg'
 
 export default function Program() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -18,21 +19,18 @@ export default function Program() {
       <Navbar /> 
       <BannerShort 
         title={translate('prog')} 
-        summary='' 
+        summary=''
+        bg={p}
+
       />
       <div className='pro'>
-        {/* <Card 
-          title={translate('vol')} 
-          resume={translate('pt-txt')} 
-          icon={<MdCastForEducation />}
+         
+        <Card 
+          title={translate('two-txt')} 
+          resume={translate('pro-educ')}
+          icon={<IoSchoolSharp />}
           clas='kar'
-        /> */}
-      <Card 
-        title={translate('two-txt')} 
-        resume={translate('pro-educ')}
-        icon={<IoSchoolSharp />}
-        clas='kar'
-      />
+        />
       </div>
  
       <Footer />

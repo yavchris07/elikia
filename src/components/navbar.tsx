@@ -20,6 +20,7 @@ export default function Navbar() {
     <div className='icon'>
       <img src={log} alt="" />
     </div>
+ 
     <div className='items'>
       <ul>
         <li>
@@ -81,12 +82,6 @@ export default function Navbar() {
           </NavLink>
         </li> */}
       </ul>
-    </div>
-    <div className='langs'>
-      {/* <span>
-        <IoLanguage />
-      </span> */}
-      
     </div>
     <Header />
 

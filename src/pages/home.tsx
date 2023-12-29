@@ -13,7 +13,9 @@ import { GiStairsGoal } from "react-icons/gi";
 import { LiaLowVisionSolid } from "react-icons/lia";
 import log from '../assets/cm.jpg';
 import lg from '../assets/logo.png';
+import tm from '../assets/team.jpg';
 
+const team = () => {}
 
 export default function Home() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -23,11 +25,25 @@ export default function Home() {
       <Navbar />
       <Banner />
 
-      <div className='slogan'>
+      {/* <div className='slogan'>
         <p>{translate('slogan')}</p>
         <p>{translate('slogan1')}</p>
         <h5>Elikya Foundation </h5>
+      </div> */}
+
+      <div className='tm'>
+        <div className='im'>
+          <img src={tm} alt="" />
+        </div>
+        
+        <div className='txt'> 
+          <p>{translate('n-about-1')}</p>
+          <p>{translate('n-about-2')}</p>
+          {/* <p>{translate('n-about-3')}</p> */}
+        </div>
       </div>
+
+    
 
       <div className='home-about'>
           <div className='card-one'>
@@ -70,6 +86,7 @@ export default function Home() {
           summary={translate('pro-educ').substring(0,320)+'...'}
           root={'/our-programs'}
         />
+
         <RightCard
          title={translate('invol')} 
          brnck={translate('join')} 
