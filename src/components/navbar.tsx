@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../styles/nav.scss';
 import log from '../assets/logo ELIKIA  bleu ciel.png';
 import {CgMenuRightAlt} from 'react-icons/cg'
@@ -14,10 +14,11 @@ import { LangContext } from '../context/lang';
 export default function Navbar() {
 
   const { dispatch: { translate }} = useContext(LangContext);
+  const nv = useNavigate();
 
   return (
     <nav>
-    <div className='icon'>
+    <div className='icon' onClick={()=> nv('/')}>
       <img src={log} alt="" />
     </div>
  
