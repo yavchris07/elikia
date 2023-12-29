@@ -17,8 +17,8 @@ $blue:#003464;
         margin: 10px auto;
         // background-color: red;
         height: auto;
-        display: flex;
-        border: 1px solid grey;
+        display: block;
+        // border: 1px solid grey;
         // border-radius: 2px;
         .pic{
             width: 30%;
@@ -29,16 +29,23 @@ $blue:#003464;
             width: 60%;
             text-align: start;
             margin-left: 5px;
-            p{color: grey;}
+            p{color: grey;  font-size: 19px;}
         }
     }
+
     .vl{
+        // width: 80%;
+        // margin: auto;
+        // text-align: start;
+
         h1{
             font-size: 25px;
         }
         p{
+            font-size: 19px;
             span{
                 color: grey;
+                font-size: 19px;
             } 
         }
     }
@@ -66,7 +73,7 @@ $blue:#003464;
             width: 60%;
             text-align: start;
             margin-left: 5px;
-            p{color: grey;}
+            p{color: grey;  font-size: 16px;}
         }
     }
 }

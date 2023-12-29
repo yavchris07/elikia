@@ -6,25 +6,25 @@ import { useNavigate } from 'react-router-dom';
 
 interface leftCard{
   title:string,
-  brnck:string,
-  subtitle:string,
   summary:string,
-  root:string
+  root:string,
+  pic:string,
+  bg:string
 }
 
-export default function LeftCard({title,brnck,subtitle,summary,root}:leftCard) {
+export default function LeftCard({title,summary,root,pic,bg}:leftCard) {
 
   const nv = useNavigate();
 
   return (
     <div className='left-card'>
         <div className='picture'>
-            <img src={lg} alt="" />
-            <h1>{title}</h1>
-            <h2>{brnck}</h2>
+            <img src={pic} alt="" />
         </div>
-        <div className='notes'>
-            <h1>{subtitle}</h1>
+
+        <div className='notes' style={{background:bg}}>
+          <div className='all'>
+            <h1>{title}</h1>
             <hr />
             <p>{summary}</p>
             
@@ -34,7 +34,7 @@ export default function LeftCard({title,brnck,subtitle,summary,root}:leftCard) {
               </button>
               <AiOutlineArrowRight className='op'/>
             </div>
-            
+          </div> 
         </div>
     </div>
   )

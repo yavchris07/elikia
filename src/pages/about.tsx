@@ -15,15 +15,14 @@ export default function About() {
     <>
       <Navbar /> 
       <BannerShort 
-        // path='• Home • about'
-        title={translate('who')} 
-        summary= {translate('about-summary')}
+        title={translate('about')} 
+        summary= {translate('')}
       />
       
       <div className='about'>
         <Card 
           title={translate('who')} 
-          resume={translate('who-text')}
+          resume={translate('about-summary')}
           clas='p'
         />
        
@@ -40,11 +39,12 @@ export default function About() {
         />
         <div className='vl'>
           <h1>{translate('our-v')}</h1>
+          <p>{translate('v')}<span>{translate('vt')}</span></p>
           <p>{translate('v1')}<span>{translate('v1t')}</span></p>
           <p>{translate('v2')}<span>{translate('v2t')}</span></p>
           <p>{translate('v3')}<span>{translate('v3t')}</span></p>
-          <p>{translate('v4')}<span>{translate('v4t')}</span></p>
-          <p>{translate('v4')}<span>{translate('v5t')}</span></p>
+          <p>{translate('v5')}<span>{translate('v5t')}</span></p>
+           
         </div>
         <Card 
           title={translate('our-p')}

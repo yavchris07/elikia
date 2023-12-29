@@ -1,24 +1,25 @@
 import '../styles/home.scss';
-import lg from '../assets/logo.png'
 import {AiOutlineArrowRight} from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 
 interface rigthCard{
     title:string,
-    brnck:string,
-    subtitle:string,
     summary:string,
-    root:string
+    root:string,
+    pic:string,
+    bg:string
 }
 
-export default function RightCard({title,brnck,subtitle,summary,root}:rigthCard) {
+export default function RightCard({title,summary,root,pic,bg}:rigthCard) {
   const nv = useNavigate();
 
   return (
     <div className='right-card'>
         
-        <div className='notes'>
-            <h1>{subtitle}</h1>
+        <div className='notes' style={{background:bg}}>
+
+          <div className='all'>
+            <h1>{title}</h1>
             <hr />
             <p>{summary}</p>
 
@@ -28,12 +29,12 @@ export default function RightCard({title,brnck,subtitle,summary,root}:rigthCard)
               </button>
               <AiOutlineArrowRight className='op'/>
             </div>
+          </div>
+
         </div>
-        <div className='picture'>
-             
-            <img src={lg} alt="" />
-            <h1>{title}</h1>
-            <h2>{brnck}</h2>
+
+        <div className='picture'>   
+          <img src={pic} alt="" />
         </div>
     </div>
   )
