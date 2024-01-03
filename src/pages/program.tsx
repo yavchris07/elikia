@@ -38,17 +38,26 @@ export default function Program() {
           <button  type="button"
             onClick={()=> setExpendable(false)}
             className='btn'
-            
           >
             Read more
           </button>
-          </div>  : 
-        <Card 
-          title={translate('two-txt')} 
-          resume={translate('pro-educ')}
-          icon={<IoSchoolSharp />}
-          clas='kar'
-        />
+          </div>  :
+          
+          <div>
+            <Card 
+              title={translate('two-txt')} 
+              resume={translate('pro-educ')}
+              icon={<IoSchoolSharp />}
+              clas='kar'
+            />
+            <button
+             onClick={()=> setExpendable(true)}
+             className='btn'
+            >
+              Read less
+            </button>
+          </div>
+        
         
         }
         
