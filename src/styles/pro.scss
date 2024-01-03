@@ -1,6 +1,9 @@
+$blue:#006cd1;
+
 .pro{
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
+    // align-items: start;
 
     .kar{
         width: 100%;
@@ -23,6 +26,21 @@
                 font-size: 20px;
             }
         }
+    }
+
+    .btn{
+        background: none;
+        color:$blue;
+        border: 1px solid$blue;
+        padding:8px 17px;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover{
+            background: $blue;
+            color:#fff;
+            border: 1px solid $blue;
+        }
+
     }
 }
 

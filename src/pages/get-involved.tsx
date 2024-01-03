@@ -56,7 +56,7 @@ export default function GetInvolved() {
             <p>{translate('vol-txt2')}</p>
             <p>{translate('vol-txt3')}</p>
             <p>{translate('vol-txt4')}</p>
-            <p>{translate('vol-txt0')}</p>
+            {/* <p>{translate('vol-txt0')}</p> */}
           </div>
         </div>
 

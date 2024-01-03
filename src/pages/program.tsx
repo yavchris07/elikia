@@ -11,8 +11,10 @@ import '../styles/pro.scss';
 import p from '../assets/p.jpg'
 
 export default function Program() {
+
   const { dispatch: { translate }} = useContext(LangContext);
-  const [on] = useState<boolean>(false);
+  // const [on] = useState<boolean>(false);
+  const [expendable,setExpendable] = useState<boolean>(true);
   
   return (
     <>
@@ -23,14 +25,34 @@ export default function Program() {
         bg={p}
 
       />
+      
       <div className='pro'>
-         
+        {
+          expendable ? <div>
+          <Card 
+            title={translate('two-txt')} 
+            resume={translate('pro-educ').substring(0,220)}
+            icon={<IoSchoolSharp />}
+            clas='kar'
+          />
+          <button  type="button"
+            onClick={()=> setExpendable(false)}
+            className='btn'
+            
+          >
+            Read more
+          </button>
+          </div>  : 
         <Card 
           title={translate('two-txt')} 
           resume={translate('pro-educ')}
           icon={<IoSchoolSharp />}
           clas='kar'
         />
+        
+        }
+        
+
       </div>
  
       <Footer />
