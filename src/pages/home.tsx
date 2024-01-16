@@ -42,7 +42,7 @@ export default function Home() {
         <RightCard
           pic={p}
           title= 'What we do'
-          summary={translate('n-about-2').substring(0,320)+'...'}
+          summary={translate('n-about-2').substring(0,300)+'...'}
           root={'/about'}
           bg='#006cd1'
         />
@@ -98,7 +98,7 @@ export default function Home() {
         <LeftCard
             pic={e} 
             title={translate('two-txt')}
-            summary={translate('pro-educ').substring(0,320)+'...'}
+            summary={translate('pro-educ').substring(0,240)+'...'}
             root={'/our-programs'}
             bg='#006cd1'
           /> 

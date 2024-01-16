@@ -374,7 +374,7 @@ $blue1:#003464;
         width: 90%;
         height: auto;
         margin: auto;
-        background-color: #ff0006;
+        // background-color: #ff0006;
         display: block;
 
         //left
@@ -417,30 +417,32 @@ $blue1:#003464;
                 height: 50%;
                 display: block;
                 
-                h1{
-                    font-size: 18px;
-                    color: red;
-                    margin: 5px;
-
-                }
-                p{color: grey; font-size: 15px;}
-
-                .btn{
-                    display: flex;
-                    width: 30%;
-                    margin: auto;
-
-                    button{
-                        background: none;
-                        font-size: 13px;
-                        padding: 5px 5px;
-                        border: none;
-                        cursor: pointer;
-                        color: $blue;
+                .all{
+                    h1{
+                        font-size: 20px;
+                        color: white;
+                        margin: 5px;
+    
                     }
-                    .op{
-                        padding: 5px;
-                        color: $blue;
+                    p{color: white; font-size: 17px;}
+    
+                    .btn{
+                        display: flex;
+                        width: 30%;
+                        margin: auto;
+    
+                        button{
+                            background: none;
+                            font-size: 13px;
+                            padding: 5px 5px;
+                            border: none;
+                            cursor: pointer;
+                            color: white;
+                        }
+                        .op{
+                            padding: 5px;
+                            color: white;
+                        }                    
                     }
                     
                 }
@@ -453,9 +455,10 @@ $blue1:#003464;
             width: 100%;
             height: 500px;
             margin: 10px auto;
-            margin-top: 35px;
+            margin-top: 15px;
             display: flex;
             flex-direction: column-reverse;
+            gap: 2px;
 
             .picture{
                 width: 100%;
@@ -463,6 +466,7 @@ $blue1:#003464;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-bottom: 7px;
 
                 img{
                     width: 100%;
@@ -485,30 +489,33 @@ $blue1:#003464;
                 width: 100%;
                 height: 50%;
                 display: block;
-                
-                h1{
-                    font-size: 20px;
-                    color: grey;
+                .all{
+                    h1{
+                        font-size: 20px;
+                        color: white;
+                        margin: 4px;
+                    }
+                    p{color: white; font-size: 15px;}
+    
+                    .btn{
+                        display: flex;
+                        width: 30%;
+                        margin: auto;
+    
+                        button{
+                            background: none;
+                            font-size: 15px;
+                            padding: 5px 5px;
+                            border: none;
+                            cursor: pointer;
+                            color: white;
+                        }
+                        .op{
+                            padding: 5px;
+                            color: $white;
+                        }
+                    
                 }
-                p{color: grey; font-size: 15px;}
-
-                .btn{
-                    display: flex;
-                    width: 30%;
-                    margin: auto;
-
-                    button{
-                        background: none;
-                        font-size: 15px;
-                        padding: 5px 5px;
-                        border: none;
-                        cursor: pointer;
-                        color: $blue;
-                    }
-                    .op{
-                        padding: 5px;
-                        color: $blue;
-                    }
                     
                 }
                 
