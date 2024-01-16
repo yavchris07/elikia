@@ -57,8 +57,6 @@ export default function Program() {
               Read less
             </button>
           </div>
-        
-        
         }
         
 

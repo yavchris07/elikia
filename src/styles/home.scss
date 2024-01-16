@@ -374,15 +374,18 @@ $blue1:#003464;
         width: 90%;
         height: auto;
         margin: auto;
+        background-color: #ff0006;
+        display: block;
 
         //left
         .left-card{
-            width: 90%;
-            height: 280px;
+            width: 100%;
+            height: 500px;
             margin: 10px auto;
-            margin-top: 20px;
+            // margin-top: 5px;
             display: flex;
             flex-direction: column;
+            gap: 5px;
             // background-color: red;
 
             .picture{
@@ -394,35 +397,37 @@ $blue1:#003464;
                 // background: #003464;
 
                 img{
-                    width: 20px;
-                    height: 20px;
-                    margin-top: 8px;
+                    width: 100%;
+                    height: 100%;
+                    margin-top:2px;
                     object-fit: cover;
                 }
-                h1,h2{
-                    // margin: 4px;
-                    text-transform: uppercase;
-                    font-size: 14px;
-                }
-                h2{
-                    color: grey;
+                // h1,h2{
+                //     // margin: 4px;
+                //     text-transform: uppercase;
+                //     font-size: 14px;
+                // }
+                // h2{
+                //     color: grey;
                     
-                }
+                // }
             }
             .notes{
                 width: 100%;
-                // height: 45%;
+                height: 50%;
                 display: block;
                 
                 h1{
-                    font-size: 20px;
-                    color: grey;
+                    font-size: 18px;
+                    color: red;
+                    margin: 5px;
+
                 }
                 p{color: grey; font-size: 15px;}
 
                 .btn{
                     display: flex;
-                    width: 20%;
+                    width: 30%;
                     margin: auto;
 
                     button{
@@ -445,9 +450,9 @@ $blue1:#003464;
 
         //right
         .right-card{
-            width: 80%;
-            height: 280px;
-            margin: 20px auto;
+            width: 100%;
+            height: 500px;
+            margin: 10px auto;
             margin-top: 35px;
             display: flex;
             flex-direction: column-reverse;
@@ -460,8 +465,8 @@ $blue1:#003464;
                 justify-content: center;
 
                 img{
-                    width: 20px;
-                    height: 20px;
+                    width: 100%;
+                    height: 100%;
                     margin-top: 8px;
                     object-fit: cover;
                 }
@@ -478,7 +483,7 @@ $blue1:#003464;
 
             .notes{
                 width: 100%;
-                // height: 45%;
+                height: 50%;
                 display: block;
                 
                 h1{
@@ -489,7 +494,7 @@ $blue1:#003464;
 
                 .btn{
                     display: flex;
-                    width: 20%;
+                    width: 30%;
                     margin: auto;
 
                     button{
